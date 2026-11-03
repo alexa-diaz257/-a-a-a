@@ -1,0 +1,210 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #e8edf3;
+    color: #333;
+    padding: 40px 20px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* ENCABEZADO */
+.encabezado {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 45px;
+    background: linear-gradient(135deg, #142b46, #245b78);
+    color: white;
+}
+
+/* FOTOGRAFÍA */
+.foto-contenedor {
+    flex-shrink: 0;
+}
+
+.foto {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #78c9d4;
+}
+
+/* INFORMACIÓN PRINCIPAL */
+.subtitulo {
+    color: #78c9d4;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.informacion-principal h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.informacion-principal h3 {
+    color: #78c9d4;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    color: #dce7ee;
+    line-height: 1.6;
+}
+
+/* DISTRIBUCIÓN DEL CONTENIDO */
+.contenido {
+    display: grid;
+    grid-template-columns: 32% 68%;
+}
+
+/* COLUMNA LATERAL */
+.lateral {
+    background: #f1f5f8;
+    padding: 35px 25px;
+}
+
+.lateral section {
+    margin-bottom: 35px;
+}
+
+.lateral h2 {
+    color: #245b78;
+    font-size: 19px;
+    border-bottom: 2px solid #78c9d4;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+}
+
+.lateral p {
+    font-size: 13px;
+    margin-bottom: 13px;
+    overflow-wrap: anywhere;
+}
+
+.lateral ul {
+    padding-left: 20px;
+}
+
+.lateral li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+/* COLUMNA PRINCIPAL */
+.principal {
+    padding: 35px 40px;
+}
+
+.seccion {
+    margin-bottom: 30px;
+}
+
+.seccion h2 {
+    color: #245b78;
+    font-size: 21px;
+    border-left: 4px solid #62bdca;
+    padding-left: 12px;
+    margin-bottom: 17px;
+}
+
+.seccion p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* FORMACIÓN ACADÉMICA */
+.elemento h3 {
+    color: #263d52;
+    margin-bottom: 8px;
+}
+
+.institucion {
+    color: #25889b !important;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* CONOCIMIENTOS TÉCNICOS */
+.habilidades-tecnicas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tecnica {
+    background: #e5f3f5;
+    color: #245b78;
+    border: 1px solid #b8dfe4;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tecnica:hover {
+    background: #245b78;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: #142b46;
+    color: #dce7ee;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+}
+
+/* DISEÑO PARA CELULARES */
+@media (max-width: 650px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .encabezado {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .informacion-principal h1 {
+        font-size: 29px;
+    }
+
+    .contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .lateral,
+    .principal {
+        padding: 25px;
+    }
+
+}
+
